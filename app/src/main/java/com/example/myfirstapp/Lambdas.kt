@@ -6,7 +6,11 @@ var lambda1 = {x:Int, y: Int-> x+y}
 var lambda2= {a:String, b:String-> a+" " +b}
 
 var lambda3 ={z:Double, x:Double-> z*x}
-
+//multi line lambda
+var multilineLambda ={
+    print("hi")
+    2
+}
  fun calculator (a: String,b:String, x:Int,y:Int, fn:(x:Int, y:Int)->Int){
      var result = fn(x,y)
      println(result)
