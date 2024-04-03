@@ -1,10 +1,11 @@
 package com.example.myfirstapp
 
 import android.os.Bundle
+import android.widget.Button
+import android.widget.EditText
+import android.widget.Toast
 import androidx.activity.enableEdgeToEdge
 import androidx.appcompat.app.AppCompatActivity
-import androidx.core.view.ViewCompat
-import androidx.core.view.WindowInsetsCompat
 
 class MainActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -12,11 +13,15 @@ class MainActivity : AppCompatActivity() {
         enableEdgeToEdge()
         val learning = Learning();
         learning.display();
-        setContentView(R.layout.activity_main)
-        ViewCompat.setOnApplyWindowInsetsListener(findViewById(R.id.main)) { v, insets ->
-            val systemBars = insets.getInsets(WindowInsetsCompat.Type.systemBars())
-            v.setPadding(systemBars.left, systemBars.top, systemBars.right, systemBars.bottom)
-            insets
+        setContentView(R.layout.activity_login)
+        val edtPassword : EditText= findViewById(R.id.edtPassword)
+        val edtEmail : EditText = findViewById(R.id.edtEmail)
+
+
+        val btnLogin:Button = findViewById(R.id.btnLogin)
+
+        btnLogin.setOnClickListener{
+            Toast.makeText(this, "${edtEmail.text} has logged in",Toast.LENGTH_LONG).show()
         }
     }
 }
