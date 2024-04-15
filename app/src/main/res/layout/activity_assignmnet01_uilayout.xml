@@ -1,0 +1,202 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:layout_marginBottom="25dp"
+        android:fontFamily="sans-serif-medium"
+        android:text="@string/working1"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/edtEmail"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/guideline4" />
+
+    <EditText
+        android:id="@+id/edtEmail"
+        android:layout_width="356dp"
+        android:layout_height="57dp"
+        android:layout_marginTop="24dp"
+        android:autofillHints=""
+        android:background="@drawable/text_field_background"
+        android:ems="10"
+        android:hint="@string/email"
+        android:inputType="textEmailAddress"
+        android:paddingStart="10dp"
+        android:paddingLeft="10dp"
+        android:paddingEnd="10dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView2" />
+
+    <EditText
+        android:id="@+id/edtPassword"
+        android:layout_width="358dp"
+        android:layout_height="56dp"
+
+        android:layout_marginTop="16dp"
+        android:layout_marginBottom="22dp"
+        android:autofillHints=""
+        android:ems="10"
+        android:hint="@string/prompt_password"
+        android:inputType="textPassword"
+        android:textColor="@color/white"
+        android:drawableStart="@android:drawable/ic_lock_lock"
+        android:drawableTint="#000000"
+        app:layout_constraintBottom_toTopOf="@+id/btnLogin2"
+        app:layout_constraintEnd_toEndOf="@+id/edtEmail"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/edtEmail"
+        app:layout_constraintTop_toBottomOf="@+id/editTextText3" />
+
+    <Button
+        android:id="@+id/btnLogin2"
+        android:layout_width="250dp"
+        android:layout_height="59dp"
+        android:text="@string/button"
+        app:layout_constraintBottom_toTopOf="@+id/btnLogin3"
+        app:layout_constraintEnd_toEndOf="@+id/edtPassword"
+        app:layout_constraintStart_toStartOf="@+id/edtPassword"
+        app:layout_constraintTop_toBottomOf="@+id/edtPassword" />
+
+    <Button
+        android:id="@+id/btnLogin6"
+        android:layout_width="250dp"
+        android:layout_height="59dp"
+        android:layout_marginTop="21dp"
+        android:text="@string/button"
+        app:layout_constraintEnd_toEndOf="@+id/btnLogin3"
+        app:layout_constraintHorizontal_bias="0.489"
+        app:layout_constraintStart_toStartOf="@+id/btnLogin3"
+        app:layout_constraintTop_toBottomOf="@+id/btnLogin3" />
+
+    <Button
+        android:id="@+id/btnLogin3"
+        android:layout_width="0dp"
+        android:layout_height="68dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="21dp"
+        android:layout_marginEnd="8dp"
+        android:text="@string/button"
+        app:layout_constraintEnd_toStartOf="@+id/btnLogin5"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/btnLogin4"
+        app:layout_constraintTop_toBottomOf="@+id/btnLogin2" />
+
+    <Button
+        android:id="@+id/btnLogin4"
+        android:layout_width="79dp"
+        android:layout_height="60dp"
+        android:text="@string/button"
+        app:layout_constraintEnd_toStartOf="@+id/btnLogin3"
+        app:layout_constraintHorizontal_chainStyle="spread"
+        app:layout_constraintStart_toStartOf="@+id/guideline"
+        app:layout_constraintTop_toTopOf="@+id/btnLogin3" />
+
+    <Button
+        android:id="@+id/btnLogin5"
+        android:layout_width="79dp"
+        android:layout_height="60dp"
+        android:text="@string/button"
+        app:layout_constraintEnd_toStartOf="@+id/guideline3"
+        app:layout_constraintStart_toEndOf="@+id/btnLogin3"
+        app:layout_constraintTop_toTopOf="@+id/btnLogin3" />
+
+    <EditText
+        android:id="@+id/editTextText3"
+        android:layout_width="161dp"
+        android:layout_height="59dp"
+        android:layout_marginTop="16dp"
+        android:autofillHints=""
+        android:paddingLeft="10dp"
+        android:ems="10"
+        android:textColorHint="@color/white"
+        android:hint="@string/email"
+        android:background="@drawable/textfield_bg1"
+        android:inputType="text"
+        app:layout_constraintEnd_toStartOf="@+id/editTextText4"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/edtEmail" />
+
+    <EditText
+        android:id="@+id/editTextText4"
+        android:layout_width="161dp"
+        android:layout_height="59dp"
+        android:ems="10"
+        android:hint="@string/email"
+        android:textColorHint="@color/white"
+        android:textColor="@color/white"
+        android:inputType="text"
+        app:layout_constraintBottom_toBottomOf="@+id/editTextText3"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/editTextText3"
+        app:layout_constraintTop_toTopOf="@+id/editTextText3" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="0dp"
+
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="16dp"
+        android:text="@string/description"
+        app:layout_constraintEnd_toStartOf="@+id/guideline3"
+        app:layout_constraintStart_toEndOf="@+id/imageView"
+        app:layout_constraintTop_toTopOf="@+id/guideline5" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.07" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.94" />
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="0dp"
+        android:layout_height="200dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="8dp"
+        android:contentDescription="person image"
+        android:scaleType="fitCenter"
+        android:src="@mipmap/ic_launcher"
+        app:layout_constraintEnd_toStartOf="@+id/textView"
+        app:layout_constraintHorizontal_chainStyle="spread"
+        app:layout_constraintStart_toStartOf="@+id/guideline"
+        app:layout_constraintTop_toTopOf="@+id/guideline5" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.08" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.69" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
