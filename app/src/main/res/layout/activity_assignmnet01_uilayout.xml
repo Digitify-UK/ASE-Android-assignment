@@ -32,7 +32,6 @@
         android:hint="@string/email"
         android:inputType="textEmailAddress"
         android:paddingStart="10dp"
-        android:paddingLeft="10dp"
         android:paddingEnd="10dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -117,7 +116,8 @@
         android:layout_height="59dp"
         android:layout_marginTop="16dp"
         android:autofillHints=""
-        android:paddingLeft="10dp"
+        android:paddingStart="10dp"
+        android:paddingEnd="10dp"
         android:ems="10"
         android:textColorHint="@color/white"
         android:hint="@string/email"
@@ -141,7 +141,8 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toEndOf="@+id/editTextText3"
-        app:layout_constraintTop_toTopOf="@+id/editTextText3" />
+        app:layout_constraintTop_toTopOf="@+id/editTextText3"
+        android:autofillHints="" />
 
     <TextView
         android:id="@+id/textView"
@@ -172,18 +173,19 @@
 
     <ImageView
         android:id="@+id/imageView"
-        android:layout_width="0dp"
-        android:layout_height="200dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
         android:layout_marginStart="16dp"
         android:layout_marginTop="16dp"
         android:layout_marginEnd="8dp"
-        android:contentDescription="person image"
+
         android:scaleType="fitCenter"
         android:src="@mipmap/ic_launcher"
         app:layout_constraintEnd_toStartOf="@+id/textView"
         app:layout_constraintHorizontal_chainStyle="spread"
         app:layout_constraintStart_toStartOf="@+id/guideline"
-        app:layout_constraintTop_toTopOf="@+id/guideline5" />
+        app:layout_constraintTop_toTopOf="@+id/guideline5"
+        android:contentDescription="@string/app_name" />
 
     <androidx.constraintlayout.widget.Guideline
         android:id="@+id/guideline4"
