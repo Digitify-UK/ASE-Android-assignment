@@ -1,4 +1,4 @@
-package com.example.myfirstapp.sharedpreferences
+package com.example.myfirstapp.sharedPreferences
 
 data class LoginModel(private var email : String, private var password : String){
     fun getEmail() :String{

@@ -1,4 +1,4 @@
-package com.example.myfirstapp.sharedpreferences
+package com.example.myfirstapp.sharedPreferences
 
 import android.content.Intent
 import android.os.Build

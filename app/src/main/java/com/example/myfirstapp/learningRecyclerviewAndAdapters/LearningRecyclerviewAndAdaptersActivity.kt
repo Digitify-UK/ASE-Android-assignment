@@ -11,7 +11,7 @@ import androidx.appcompat.app.AppCompatActivity
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
 import com.example.myfirstapp.R
-import com.example.myfirstapp.sharedpreferences.SplashActivity
+import com.example.myfirstapp.sharedPreferences.SplashActivity
 
 class LearningRecyclerviewAndAdaptersActivity : AppCompatActivity() {
 
@@ -82,14 +82,6 @@ class LearningRecyclerviewAndAdaptersActivity : AppCompatActivity() {
         recyclerview.adapter?.notifyDataSetChanged()
         showToast("List has been sorted")
     }
-//    private fun sortList() {
-//        arrContact.sortBy { it.personName }
-//        // Notify the adapter about the change in item positions
-//        for (index in 0 until arrContact.size) {
-//            recyclerview.adapter?.notifyItemMoved(index, arrContact.indexOf(arrContact[index]))
-//        }
-//        showToast("List has been sorted")
-//    }
 
 
     private fun deleteListItem() {

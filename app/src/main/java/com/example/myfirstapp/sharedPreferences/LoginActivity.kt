@@ -1,4 +1,4 @@
-package com.example.myfirstapp.sharedpreferences
+package com.example.myfirstapp.sharedPreferences
 
 import android.content.Intent
 import android.os.Bundle
@@ -10,11 +10,9 @@ import com.example.myfirstapp.learningRecyclerviewAndAdapters.LearningRecyclervi
 
 class LoginActivity : AppCompatActivity() {
     private lateinit var binding : ActivityLoginBinding
-    private lateinit var loginModel: LoginModel
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         enableEdgeToEdge()
-//        setContentView(R.layout.activity_login)
         binding = ActivityLoginBinding.inflate(layoutInflater)
 setContentView(binding.root)
 val email = binding.edtEmail.text

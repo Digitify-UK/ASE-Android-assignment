@@ -29,4 +29,10 @@
     <string name="chat_fragment">Chat Fragments Ui Here</string>
     <string name="calls_fragment">Calls Fragment Ui here</string>
     <string name="updates_fragment">Updates Fragment Ui here</string>
+    <string name="login_button">Login</string>
+    <string name="password_string">Password</string>
+    <string name="e_mail_string">E-mail</string>
+    <string name="login_welcome">Welcome to login Screen</string>
+    <string name="btn_log_out">Log out</string>
+    <string name="person_image">person image</string>
 </resources>
