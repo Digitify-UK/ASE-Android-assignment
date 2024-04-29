@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="300sp"
+
+    android:padding="20dp"
+    android:orientation="vertical"
+    android:background="@drawable/dialog_bg"
+    android:gravity="center"
+    android:layout_height="wrap_content">
+
+
+    <EditText
+        android:id="@+id/edtCourseName"
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        android:layout_marginBottom="10dp"
+
+        android:hint="Course Name"
+        android:inputType="text"
+        android:text="" />
+
+    <EditText
+        android:id="@+id/etdCourseDuration"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_marginBottom="10dp"
+
+        android:hint="Course Duration (10 Days)"
+        android:inputType="text"
+        android:text="" />
+
+    <EditText
+        android:id="@+id/edtCourseTrack"
+        android:layout_width="match_parent"
+        android:layout_height="67dp"
+        android:layout_marginBottom="10dp"
+
+        android:hint="Course Tracks (20 Tracks)"
+        android:inputType="text"
+        android:text="" />
+
+    <EditText
+        android:id="@+id/edtCourseDetails"
+        android:layout_width="match_parent"
+        android:layout_height="65dp"
+        android:layout_marginBottom="10dp"
+
+        android:hint="Course Details"
+        android:inputType="text"
+        android:text="" />
+    <Button
+        android:id="@+id/btnAddCourseOk"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Add Coure"/>
+
+
+</LinearLayout>

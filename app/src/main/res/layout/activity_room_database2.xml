@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".roomDatabaseAssignment.RoomDatabaseActivity">
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/btnFloatAddCourse"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="24dp"
+        android:layout_marginBottom="24dp"
+        android:clickable="true"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+
+        app:srcCompat="@drawable/edit" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rvCourse"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="16dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnOrderASC" />
+
+    <Button
+        android:id="@+id/btnFilterAll"
+        android:layout_width="54dp"
+        android:layout_height="54dp"
+        android:background="@drawable/circular_bg"
+
+        android:text="All"
+        android:textSize="10sp"
+        app:layout_constraintBottom_toBottomOf="@+id/btnOrderASC"
+        app:layout_constraintEnd_toStartOf="@+id/btnOrderASC"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/btnOrderASC" />
+
+    <Button
+        android:id="@+id/btnOrderASC"
+        android:layout_width="54dp"
+        android:layout_height="54dp"
+        android:layout_marginTop="60dp"
+        android:background="@drawable/circular_bg"
+        android:text="ASC"
+        android:textSize="10sp"
+        app:layout_constraintEnd_toStartOf="@+id/btnFilter30Dur"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/btnFilterAll"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/btnFilter30Dur"
+        android:layout_width="54dp"
+        android:layout_height="54dp"
+        android:background="@drawable/circular_bg"
+        android:text="30"
+        android:textSize="10sp"
+        app:layout_constraintBottom_toBottomOf="@+id/btnOrderASC"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/btnOrderASC"
+        app:layout_constraintTop_toTopOf="@+id/btnOrderASC" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

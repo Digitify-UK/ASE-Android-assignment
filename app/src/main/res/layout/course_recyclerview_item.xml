@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginBottom="12dp"
+    android:background="@drawable/dialog_bg"
+    android:elevation="5dp">
+
+    <ImageButton
+        android:id="@+id/btnDelete"
+        android:layout_width="36dp"
+        android:layout_height="29dp"
+        android:src="@drawable/baseline_auto_delete_24"
+        app:layout_constraintEnd_toEndOf="@+id/tvCourseDetails"
+        app:layout_constraintTop_toTopOf="@+id/btnEdit" />
+
+    <ImageButton
+        android:id="@+id/btnEdit"
+        android:layout_width="0dp"
+        android:layout_height="29dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginEnd="4dp"
+        android:src="@drawable/baseline_border_color_24"
+        app:layout_constraintEnd_toStartOf="@+id/btnDelete"
+        app:layout_constraintTop_toBottomOf="@+id/tvCourseDetails" />
+
+    <TextView
+        android:id="@+id/tvCourseID"
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginBottom="24dp"
+        android:background="@drawable/circular_bg"
+        android:text="0"
+        android:textAlignment="center"
+        android:textColor="#FFEB3B"
+        android:textSize="48sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/tvCourseName"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="8dp"
+        android:text="Course Name"
+        android:textColor="@color/black"
+        android:textStyle="bold"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toStartOf="@+id/tvCourseDuration"
+        app:layout_constraintStart_toEndOf="@+id/tvCourseID"
+        app:layout_constraintTop_toTopOf="@+id/tvCourseID" />
+
+    <TextView
+        android:id="@+id/tvCourseDuration"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="16dp"
+        android:text="18 Days"
+        android:textColor="@color/black"
+        android:textStyle="bold"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toBottomOf="@+id/tvCourseName"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/tvCourseName" />
+
+    <TextView
+        android:id="@+id/tvCourseTrack"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="4dp"
+        android:text="20 Tracks"
+        android:textSize="16sp"
+        android:textColor="@color/black"
+        app:layout_constraintStart_toStartOf="@+id/tvCourseName"
+        app:layout_constraintTop_toBottomOf="@+id/tvCourseName" />
+
+    <TextView
+        android:id="@+id/tvCourseDetails"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="16dp"
+        android:text="Courser Details"
+        android:textColor="#151515"
+        android:textStyle="italic"
+        app:layout_constraintBottom_toBottomOf="@+id/tvCourseID"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/tvCourseTrack"
+        app:layout_constraintTop_toBottomOf="@+id/tvCourseTrack"
+        app:layout_constraintVertical_bias="0.0" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
