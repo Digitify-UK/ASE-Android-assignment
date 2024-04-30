@@ -26,4 +26,7 @@
     <string name="button1">Button1</string>
     <string name="button2">Button2</string>
     <string name="button3">Button3</string>
+    <string name="chat_fragment">Chat Fragments Ui Here</string>
+    <string name="calls_fragment">Calls Fragment Ui here</string>
+    <string name="updates_fragment">Updates Fragment Ui here</string>
 </resources>
