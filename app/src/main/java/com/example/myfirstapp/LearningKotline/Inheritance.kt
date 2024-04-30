@@ -1,4 +1,3 @@
-//package com.example.myfirstapp
 
 open class Employee(var name: String, var age: Int) {
     open fun display(){

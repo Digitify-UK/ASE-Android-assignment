@@ -1,4 +1,4 @@
-package com.example.myfirstapp
+package com.example.myfirstapp.LearningKotline
 
 //a unnamed function is called lambda
 var lambda1 = {x:Int, y: Int-> x+y}

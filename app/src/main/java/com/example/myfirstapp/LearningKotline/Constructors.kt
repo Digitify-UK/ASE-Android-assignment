@@ -1,4 +1,4 @@
-//package com.example.myfirstapp
+package com.example.myfirstapp.LearningKotline//package com.example.myfirstapp
 
 //primary constructors
 
@@ -28,8 +28,8 @@ class Person{
 }
 
 fun main(){
-    var person =Person(name = "Asif", age= 23, id = 1234)
-    var person2 =Person()
+    var person = Person(name = "Asif", age= 23, id = 1234)
+    var person2 = Person()
     person2.display()
     person.display()
 

@@ -10,8 +10,15 @@
     <string name="invalid_password">Password must be >5 characters</string>
     <string name="login_failed">"Login failed"</string>
     <string name="button">"Button"</string>
+    <string name="delete_item_button">"Delete Item"</string>
+    <string name="insert_item_button">"Insert Item"</string>
+    <string name="Sort_item_button">"Sort Item"</string>
+    <string name="default_pix">"Pic here"</string>
     <string name="email">"Email"</string>
     <string name="working1">"Working with ConstraintLayout"</string>
-
     <string name="description">"Chains are used to control the positioning and alignment of multiple views along a single axis (horizontal or vertical)"</string>
+    <string name="phone_alt">03016691397</string>
+    <string name="btn_call_now">Call Now</string>
+    <string name="okay_button">okay</string>
+    <string name="name_alt">name</string>
 </resources>
