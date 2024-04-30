@@ -13,7 +13,7 @@
         android:theme="@style/Theme.MyFirstApp"
         tools:targetApi="31">
         <activity
-            android:name=".drawer.DrawerActivity"
+            android:name=".dataBinding.DataBindingLearning"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -22,12 +22,19 @@
             </intent-filter>
         </activity>
         <activity
-            android:name=".tabBar.TabBarActivity"
+            android:name=".bottomNavBar.BottomNavBar"
             android:exported="false">
+
         </activity>
         <activity
+            android:name=".drawer.DrawerActivity"
+            android:exported="false" />
+        <activity
+            android:name=".tabBar.TabBarActivity"
+            android:exported="false"/>
+        <activity
             android:name=".learningFragments.LearningFragments"
-            android:exported="true" />
+            android:exported="false" />
         <activity
             android:name=".redesigningRecyclerView.RedesigningRecyclerviewUI"
             android:exported="false" />

@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+<item
+    android:id="@+id/bNavHome"
+    android:title="Home"
+    android:icon="@drawable/home"/>
+    <item
+        android:id="@+id/bNavLike"
+        android:title="Likes"
+        android:iconTint="#FF0000"
+        android:icon="@drawable/heart"/>
+
+    <item
+        android:id="@+id/bNavContacts"
+        android:title="Contacts"
+        android:icon="@drawable/phone_call"/>
+    <item
+        android:id="@+id/bNavProfile"
+        android:title="Profile"
+        android:icon="@drawable/user"/>
+</menu>
