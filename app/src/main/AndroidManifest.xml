@@ -13,16 +13,7 @@
         android:theme="@style/Theme.MyFirstApp"
         tools:targetApi="31">
         <activity
-            android:name=".redesigningRecyclerView.RedesigningRecyclerviewUI"
-            android:exported="true" >
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
-
-                <category android:name="android.intent.category.LAUNCHER" />
-            </intent-filter>
-        </activity>
-        <activity
-            android:name=".learningRecyclerviewAndAdapters.LearningRecyclerviewAndAdaptersActivity"
+            android:name=".learningFragments.LearningFragments"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -31,10 +22,14 @@
             </intent-filter>
         </activity>
         <activity
+            android:name=".redesigningRecyclerView.RedesigningRecyclerviewUI"
+            android:exported="false"/>
+        <activity
+            android:name=".learningRecyclerviewAndAdapters.LearningRecyclerviewAndAdaptersActivity"
+            android:exported="false"/>
+        <activity
             android:name=".Assignment01_ConstraintLayoutPractice.Assignmnet01_UILayout"
-            android:exported="false">
-
-        </activity>
+            android:exported="false" />
         <activity
             android:name=".MainActivity"
             android:exported="false" />

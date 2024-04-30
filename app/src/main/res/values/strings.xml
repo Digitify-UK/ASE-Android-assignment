@@ -21,4 +21,9 @@
     <string name="btn_call_now">Call Now</string>
     <string name="okay_button">okay</string>
     <string name="name_alt">name</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="button1">Button1</string>
+    <string name="button2">Button2</string>
+    <string name="button3">Button3</string>
 </resources>
