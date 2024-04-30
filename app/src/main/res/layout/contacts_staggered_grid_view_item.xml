@@ -1,0 +1,31 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/staggerContactListItem"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_margin="10dp">
+
+    <ImageView
+        android:id="@+id/imageViewPersonImageStaggered"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:scaleType="centerCrop"
+        android:layout_gravity="center"
+        tools:srcCompat="@tools:sample/avatars" />
+
+    <TextView
+        android:id="@+id/tvPersonNameStaggered"
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:background="@drawable/textview_bg"
+        android:text="@string/name_alt"
+        android:textColor="@color/white"
+        android:textSize="15sp"
+        android:padding="5dp"
+        android:layout_gravity="center|bottom"
+        android:textAlignment="center"
+
+        android:textStyle="bold" />
+
+</FrameLayout>
