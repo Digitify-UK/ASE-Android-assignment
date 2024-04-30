@@ -12,8 +12,9 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.MyFirstApp"
         tools:targetApi="31">
+
         <activity
-            android:name=".dataBinding.DataBindingLearning"
+            android:name=".sharedPreferences.SplashActivity"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -22,16 +23,20 @@
             </intent-filter>
         </activity>
         <activity
+            android:name=".sharedPreferences.LoginActivity"
+            android:exported="false" />
+        <activity
+            android:name=".dataBinding.DataBindingLearning"
+            android:exported="true"/>
+        <activity
             android:name=".bottomNavBar.BottomNavBar"
-            android:exported="false">
-
-        </activity>
+            android:exported="false" />
         <activity
             android:name=".drawer.DrawerActivity"
             android:exported="false" />
         <activity
             android:name=".tabBar.TabBarActivity"
-            android:exported="false"/>
+            android:exported="false" />
         <activity
             android:name=".learningFragments.LearningFragments"
             android:exported="false" />
@@ -42,7 +47,7 @@
             android:name=".learningRecyclerviewAndAdapters.LearningRecyclerviewAndAdaptersActivity"
             android:exported="false" />
         <activity
-            android:name=".Assignment01_ConstraintLayoutPractice.Assignmnet01_UILayout"
+            android:name=".assignment01ConstraintLayoutPractice.Assignment01UILayout"
             android:exported="false" />
         <activity
             android:name=".MainActivity"

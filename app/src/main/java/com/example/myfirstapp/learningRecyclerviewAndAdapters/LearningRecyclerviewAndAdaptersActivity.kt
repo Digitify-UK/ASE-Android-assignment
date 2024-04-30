@@ -1,7 +1,9 @@
 package com.example.myfirstapp.learningRecyclerviewAndAdapters
 
 import android.annotation.SuppressLint
+import android.content.Intent
 import android.os.Bundle
+import android.util.Log
 import android.widget.Button
 import android.widget.Toast
 import androidx.activity.enableEdgeToEdge
@@ -9,6 +11,7 @@ import androidx.appcompat.app.AppCompatActivity
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
 import com.example.myfirstapp.R
+import com.example.myfirstapp.sharedPreferences.SplashActivity
 
 class LearningRecyclerviewAndAdaptersActivity : AppCompatActivity() {
 
@@ -49,10 +52,20 @@ class LearningRecyclerviewAndAdaptersActivity : AppCompatActivity() {
         val btnAddNew: Button = findViewById(R.id.btnAddItemToList)
         val btnDeleteListItem: Button = findViewById(R.id.btnDeleteListItem)
         val btnSortList: Button = findViewById(R.id.btnSortList)
+        val btnLogout : Button = findViewById(R.id.btnLogout)
 
         btnAddNew.setOnClickListener { addNewItemToList() }
         btnSortList.setOnClickListener { sortList() }
         btnDeleteListItem.setOnClickListener { deleteListItem() }
+        btnLogout.setOnClickListener {
+            clearSharedPreference()
+        }
+    }
+    private fun clearSharedPreference (){
+        val sharedPreferences = getSharedPreferences("Login", MODE_PRIVATE).edit()
+        sharedPreferences.clear().apply()
+        startActivity(Intent(this, SplashActivity::class.java))
+       Log.d("Tag125","Logged out")
     }
 
     private fun addNewItemToList() {
@@ -69,14 +82,6 @@ class LearningRecyclerviewAndAdaptersActivity : AppCompatActivity() {
         recyclerview.adapter?.notifyDataSetChanged()
         showToast("List has been sorted")
     }
-//    private fun sortList() {
-//        arrContact.sortBy { it.personName }
-//        // Notify the adapter about the change in item positions
-//        for (index in 0 until arrContact.size) {
-//            recyclerview.adapter?.notifyItemMoved(index, arrContact.indexOf(arrContact[index]))
-//        }
-//        showToast("List has been sorted")
-//    }
 
 
     private fun deleteListItem() {

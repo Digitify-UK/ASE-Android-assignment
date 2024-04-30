@@ -9,7 +9,7 @@ class MainActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         enableEdgeToEdge()
 
-        setContentView(R.layout.text_field_practicing)
+        setContentView(R.layout.activity_main)
 
     }
 
