@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools">
+    <uses-permission android:name="android.permission.INTERNET"/>
 
     <application
         android:allowBackup="true"
@@ -13,21 +14,25 @@
         android:theme="@style/Theme.MyFirstApp"
         tools:targetApi="31">
         <activity
-            android:name=".roomDatabaseAssignment.RoomDatabaseActivity"
+            android:name=".networkingAndApiIntegrations.TodosActivity"
             android:exported="true" >
-          <intent-filter>
+            <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
-            </intent-filter></activity>
+            </intent-filter>
+        </activity>
         <activity
-            android:name=".roomDatabaseImplementation.RoomDatabaseActivity"
+            android:name=".roomDatabaseAssignment.RoomDatabaseActivity"
             android:exported="true">
 
         </activity>
         <activity
+            android:name=".roomDatabaseImplementation.RoomDatabaseActivity"
+            android:exported="true"></activity>
+        <activity
             android:name=".sharedPreferences.SplashActivity"
-            android:exported="true"/>
+            android:exported="true" />
         <activity
             android:name=".sharedPreferences.LoginActivity"
             android:exported="false" />

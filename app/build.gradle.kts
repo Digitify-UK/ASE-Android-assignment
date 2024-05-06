@@ -51,6 +51,16 @@ dependencies {
     annotationProcessor("androidx.room:room-compiler:$room_version")
     kapt("androidx.room:room-compiler:$room_version")
     implementation("androidx.room:room-ktx:$room_version")
+    //RetroFit
+    implementation ("com.squareup.retrofit2:retrofit:2.11.0")
+    //Gson
+//    implementation ("com.squareup.retrofit2:converter-gson:2.10.1")
+    implementation ("com.squareup.retrofit2:converter-gson:2.9.0")
+
+    implementation ("androidx.lifecycle:lifecycle-viewmodel:2.7.0")
+    implementation ("androidx.lifecycle:lifecycle-runtime:2.7.0")
+    //OkHttp
+    implementation("com.squareup.okhttp3:okhttp:4.12.0")
     implementation(libs.androidx.core.ktx)
     implementation(libs.androidx.appcompat)
     implementation(libs.material)
